@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="관심있는 언어를 선택해주세요"
+        android:text="관심있는 분야를 선택해주세요"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
@@ -17,110 +17,105 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.118" />
-
-    <CheckBox
-        android:id="@+id/c_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C"
-        android:textSize="25dp"
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="395dp"
+        android:layout_height="411dp"
+        android:gravity="center_vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        >
 
-    <CheckBox
-        android:id="@+id/cpp_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C++"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.685"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
 
-    <CheckBox
-        android:id="@+id/java_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="JAVA"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        <RadioButton
+            android:id="@+id/c_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    C"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.349"
+            android:layout_weight="1"
+            />
 
-    <CheckBox
-        android:id="@+id/python_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Python"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        <RadioButton
+            android:id="@+id/cpp_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  C++"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.349"
+            android:layout_weight="1"/>
 
-    <CheckBox
-        android:id="@+id/unity_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="C#"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
 
-    <CheckBox
-        android:id="@+id/matlab_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MATLAB"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        <RadioButton
+            android:id="@+id/java_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" JAVA"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            android:layout_weight="1"/>
 
-    <CheckBox
-        android:id="@+id/kotlin_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kotlin"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        <RadioButton
+            android:id="@+id/python_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499"
+            android:layout_weight="1"/>
 
-    <CheckBox
-        android:id="@+id/javascript_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="JavaScript"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        <RadioButton
+            android:id="@+id/chash_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   C#"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.642"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/game_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Game engine"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.349"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
 
     <Button
         android:id="@+id/next_btn"
@@ -132,6 +127,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.925"
-        android:text="다음"/>
+        android:text="다음"
+        android:textColor="#000000"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@ public class SubActivity3 extends AppCompatActivity {
     TextView textView;
     private Button major_btn;
 
-    String[] select_major={"전공 선택","복지융합인재학부","사회복지학부","실버산업학과","글로벌경영학부","소프트웨어응용학부","부동산건설학부"};
+    String[] select_major={"전공 선택","복지융합인재학부","사회복지학부","실버산업학과","글로벌경영학부","ICT융합공학부","부동산건설학부"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
